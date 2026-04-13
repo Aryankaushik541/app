@@ -8,30 +8,45 @@ import cloudinary from "cloudinary";
 import Stripe from "stripe";
 import helmet from "helmet";
 import mongoSanitize from "express-mongo-sanitize";
+import mongoose from "mongoose";
 
-import connectDB from "./config/db.js";
-// dot env config
+// ENV CONFIG
 dotenv.config();
 
-//database connection
-connectDB();
+// EXPRESS APP
+const app = express();
 
-//stripe configuration
+// ================= DATABASE CONNECTION (FIXED) =================
+const connectDB = async () => {
+  try {
+    if (mongoose.connection.readyState >= 1) return;
+
+    await mongoose.connect(process.env.MONGO_URI, {
+      dbName: "test",
+    });
+
+    console.log("MongoDB Connected".bgGreen.white);
+  } catch (error) {
+    console.log("MongoDB Error:", error);
+  }
+};
+
+// Call DB
+await connectDB();
+
+// ================= STRIPE =================
 export const stripe = process.env.STRIPE_API_SECRET
   ? new Stripe(process.env.STRIPE_API_SECRET)
   : null;
 
-//cloudinary Config
+// ================= CLOUDINARY =================
 cloudinary.v2.config({
   cloud_name: process.env.CLOUDINARY_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_SECRET,
 });
 
-//rest object
-const app = express();
-
-//middlewares
+// ================= MIDDLEWARE =================
 app.use(helmet());
 app.use(mongoSanitize());
 app.use(morgan("dev"));
@@ -39,30 +54,26 @@ app.use(express.json());
 app.use(cors());
 app.use(cookieParser());
 
-//route
-//routes imports
+// ================= ROUTES =================
 import testRoutes from "./routes/testRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
+
 app.use("/api/v1", testRoutes);
 app.use("/api/v1/user", userRoutes);
 app.use("/api/v1/product", productRoutes);
 app.use("/api/v1/cat", categoryRoutes);
 app.use("/api/v1/order", orderRoutes);
 
+// ================= ROOT =================
 app.get("/", (req, res) => {
-  return res.status(200).send("<h1>Welcome To Node server </h1>");
+  res.status(200).send("<h1>Server Running Successfully</h1>");
 });
 
-//port
-const PORT = process.env.PORT || 8080;
+// ================= ❌ REMOVE THIS =================
+// app.listen(PORT, () => {})
 
-//listen
-app.listen(PORT, () => {
-  console.log(
-    `Server Running On PORT ${process.env.PORT} on ${process.env.NODE_ENV} Mode`
-      .bgMagenta.white
-  );
-});
+// ================= ✅ SERVERLESS EXPORT =================
+export default app;
