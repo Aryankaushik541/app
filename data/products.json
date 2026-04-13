@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Urban Edge Overshirt",
+    "slug": "urban-edge-overshirt",
+    "description": "Structured cotton overshirt with tailored pockets and a premium soft-touch finish for elevated daily wear.",
+    "price": 2899,
+    "stock": 24,
+    "categorySlug": "men-fashion",
+    "brand": "May Signature",
+    "discount": 18,
+    "featured": true,
+    "hero": true,
+    "rating": 4.7,
+    "numReviews": 18,
+    "tags": ["new", "men", "smart-casual"],
+    "images": [
+      {
+        "public_id": "seed-urban-edge-overshirt",
+        "url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80"
+      }
+    ]
+  },
+  {
+    "name": "RunFlex Knit Sneakers",
+    "slug": "runflex-knit-sneakers",
+    "description": "Lightweight knit sneakers with all-day cushioning and a sport-luxe silhouette built for travel and city wear.",
+    "price": 3499,
+    "stock": 31,
+    "categorySlug": "sneakers",
+    "brand": "Stride Lab",
+    "discount": 22,
+    "featured": true,
+    "hero": false,
+    "rating": 4.8,
+    "numReviews": 52,
+    "tags": ["best-seller", "sneakers", "running"],
+    "images": [
+      {
+        "public_id": "seed-runflex-knit-sneakers",
+        "url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80"
+      }
+    ]
+  },
+  {
+    "name": "Velvet Bloom Lip Kit",
+    "slug": "velvet-bloom-lip-kit",
+    "description": "Three-shade lip set with matte comfort formula, long wear pigment and smooth glide texture.",
+    "price": 1599,
+    "stock": 60,
+    "categorySlug": "beauty",
+    "brand": "Muse Beauty",
+    "discount": 12,
+    "featured": true,
+    "hero": false,
+    "rating": 4.5,
+    "numReviews": 34,
+    "tags": ["beauty", "lipstick", "trending"],
+    "images": [
+      {
+        "public_id": "seed-velvet-bloom-lip-kit",
+        "url": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=900&q=80"
+      }
+    ]
+  },
+  {
+    "name": "Aether Smartwatch Pro",
+    "slug": "aether-smartwatch-pro",
+    "description": "AMOLED smartwatch with wellness tracking, bluetooth calling and fast-charge premium aluminum body.",
+    "price": 7999,
+    "stock": 16,
+    "categorySlug": "electronics",
+    "brand": "Aether",
+    "discount": 15,
+    "featured": true,
+    "hero": true,
+    "rating": 4.6,
+    "numReviews": 27,
+    "tags": ["electronics", "watch", "fitness"],
+    "images": [
+      {
+        "public_id": "seed-aether-smartwatch-pro",
+        "url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80"
+      }
+    ]
+  },
+  {
+    "name": "Luna Draped Midi Dress",
+    "slug": "luna-draped-midi-dress",
+    "description": "Fluid midi dress with statement drape detailing, designed for festive evenings and occasion wear.",
+    "price": 4299,
+    "stock": 20,
+    "categorySlug": "women-fashion",
+    "brand": "Luna Atelier",
+    "discount": 20,
+    "featured": true,
+    "hero": false,
+    "rating": 4.9,
+    "numReviews": 44,
+    "tags": ["women", "dress", "occasion"],
+    "images": [
+      {
+        "public_id": "seed-luna-draped-midi-dress",
+        "url": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80"
+      }
+    ]
+  },
+  {
+    "name": "Nordic Glow Floor Lamp",
+    "slug": "nordic-glow-floor-lamp",
+    "description": "Minimal floor lamp with warm ambient throw, matte metal build and designer living room appeal.",
+    "price": 5199,
+    "stock": 12,
+    "categorySlug": "home-decor",
+    "brand": "North Nest",
+    "discount": 10,
+    "featured": false,
+    "hero": false,
+    "rating": 4.4,
+    "numReviews": 11,
+    "tags": ["home", "lighting", "decor"],
+    "images": [
+      {
+        "public_id": "seed-nordic-glow-floor-lamp",
+        "url": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80"
+      }
+    ]
+  },
+  {
+    "name": "Contour Leather Tote",
+    "slug": "contour-leather-tote",
+    "description": "Structured faux-leather tote with metal hardware, wide base and laptop-friendly roomy interior.",
+    "price": 3899,
+    "stock": 18,
+    "categorySlug": "women-fashion",
+    "brand": "Contour",
+    "discount": 14,
+    "featured": false,
+    "hero": false,
+    "rating": 4.5,
+    "numReviews": 22,
+    "tags": ["bag", "women", "office"],
+    "images": [
+      {
+        "public_id": "seed-contour-leather-tote",
+        "url": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80"
+      }
+    ]
+  },
+  {
+    "name": "Slate Noise-Cancel Headphones",
+    "slug": "slate-noise-cancel-headphones",
+    "description": "Over-ear headphones with deep bass, adaptive noise cancelation and a premium travel case.",
+    "price": 9999,
+    "stock": 14,
+    "categorySlug": "electronics",
+    "brand": "Slate Audio",
+    "discount": 17,
+    "featured": true,
+    "hero": false,
+    "rating": 4.8,
+    "numReviews": 39,
+    "tags": ["audio", "electronics", "music"],
+    "images": [
+      {
+        "public_id": "seed-slate-noise-cancel-headphones",
+        "url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80"
+      }
+    ]
+  },
+  {
+    "name": "Daily Ritual Skincare Set",
+    "slug": "daily-ritual-skincare-set",
+    "description": "Cleanser, serum and moisturizer routine curated for hydrated, balanced and bright everyday skin.",
+    "price": 2399,
+    "stock": 40,
+    "categorySlug": "beauty",
+    "brand": "Ritual Lab",
+    "discount": 19,
+    "featured": false,
+    "hero": false,
+    "rating": 4.3,
+    "numReviews": 17,
+    "tags": ["skincare", "beauty", "combo"],
+    "images": [
+      {
+        "public_id": "seed-daily-ritual-skincare-set",
+        "url": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=900&q=80"
+      }
+    ]
+  },
+  {
+    "name": "Terra Ceramic Vase Pair",
+    "slug": "terra-ceramic-vase-pair",
+    "description": "Textured ceramic vase pair for shelves and consoles with artisanal matte earth finish.",
+    "price": 1899,
+    "stock": 28,
+    "categorySlug": "home-decor",
+    "brand": "Terra Form",
+    "discount": 8,
+    "featured": false,
+    "hero": false,
+    "rating": 4.2,
+    "numReviews": 9,
+    "tags": ["decor", "vase", "home"],
+    "images": [
+      {
+        "public_id": "seed-terra-ceramic-vase-pair",
+        "url": "https://images.unsplash.com/photo-1616628182509-6a6b3f6e0ef1?auto=format&fit=crop&w=900&q=80"
+      }
+    ]
+  },
+  {
+    "name": "Motion Cargo Joggers",
+    "slug": "motion-cargo-joggers",
+    "description": "Tapered utility joggers with stretch waist, modern cargo detailing and breathable brushed fabric.",
+    "price": 2599,
+    "stock": 35,
+    "categorySlug": "men-fashion",
+    "brand": "Motion Dept",
+    "discount": 16,
+    "featured": false,
+    "hero": false,
+    "rating": 4.4,
+    "numReviews": 21,
+    "tags": ["men", "bottomwear", "athleisure"],
+    "images": [
+      {
+        "public_id": "seed-motion-cargo-joggers",
+        "url": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=900&q=80"
+      }
+    ]
+  },
+  {
+    "name": "Glide Street Low Tops",
+    "slug": "glide-street-low-tops",
+    "description": "Streetwear low-top sneakers with layered paneling, comfort sole and clean neutral palette.",
+    "price": 4199,
+    "stock": 22,
+    "categorySlug": "sneakers",
+    "brand": "Glide",
+    "discount": 13,
+    "featured": true,
+    "hero": false,
+    "rating": 4.7,
+    "numReviews": 30,
+    "tags": ["streetwear", "sneakers", "casual"],
+    "images": [
+      {
+        "public_id": "seed-glide-street-low-tops",
+        "url": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=900&q=80"
+      }
+    ]
+  }
+]
