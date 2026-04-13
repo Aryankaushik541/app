@@ -3,9 +3,10 @@ import userMdoel from "../models/userModel.js";
 
 export const isAuth = async (req, res, next) => {
   try {
-    const { token } = req.cookies;
+    // Support both cookie (web) and Authorization header (Expo/React Native)
+    const cookieToken = req.cookies?.token;
     const headerToken = req.headers.authorization?.split(" ")[1];
-    const finalToken = token || headerToken;
+    const finalToken = cookieToken || headerToken;
 
     if (!finalToken) {
       return res.status(401).send({

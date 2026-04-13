@@ -32,14 +32,22 @@ cloudinary.v2.config({
 const app = express();
 
 //middlewares
-app.use(helmet());
+app.use(helmet({ crossOriginResourcePolicy: false }));
 app.use(mongoSanitize());
 app.use(morgan("dev"));
 app.use(express.json());
-app.use(cors());
+
+// CORS - Fixed for Expo / React Native
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
+
 app.use(cookieParser());
 
-//route
 //routes imports
 import testRoutes from "./routes/testRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
