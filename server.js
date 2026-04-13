@@ -59,10 +59,14 @@ app.get("/", (req, res) => {
 //port
 const PORT = process.env.PORT || 8080;
 
-//listen
-app.listen(PORT, () => {
-  console.log(
-    `Server Running On PORT ${process.env.PORT} on ${process.env.NODE_ENV} Mode`
-      .bgMagenta.white
-  );
-});
+// Local development only
+if (process.env.NODE_ENV !== "production") {
+  app.listen(PORT, () => {
+    console.log(
+      `Server Running On PORT ${PORT} on ${process.env.NODE_ENV} Mode`
+        .bgMagenta.white
+    );
+  });
+}
+
+export default app;
